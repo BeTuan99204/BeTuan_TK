@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [search, setSearch] = useState('');
@@ -26,9 +27,9 @@ export default function Header() {
       <div className="flex items-center space-x-6">
         {/* Menu */}
         <nav className="hidden md:flex space-x-4 text-gray-700">
-          <a href="#" className="hover:text-blue-600">Trang chủ</a>
-          <a href="#" className="hover:text-blue-600">Sản phẩm</a>
-          <a href="#" className="hover:text-blue-600">Liên hệ</a>
+          <Link to="/" className="hover:text-blue-600">Trang chủ</Link>
+          <Link to="/add" className="hover:text-blue-600">Sản phẩm</Link>
+          <Link to="/update" className="hover:text-blue-600">Liên hệ</Link>
         </nav>
 
         {/* Giỏ hàng */}
@@ -48,7 +49,7 @@ export default function Header() {
           />
         </div>
 
-        {/* Menu icon for mobile */}
+        {/* Mobile Menu Icon */}
         <button className="md:hidden">
           <Menu className="w-6 h-6 text-gray-700" />
         </button>
