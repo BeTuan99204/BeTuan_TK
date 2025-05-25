@@ -10,18 +10,18 @@ export const fetchEvent = createAsyncThunk('events/fetch',async()=>{
 
 const EventSlice = createSlice({
     name:'events',
-    initialState:{events:[],laoding:false,error:null},
+    initialState:{events:[],loading:false,error:null},
     extraReducers:(build)=>{
         build.addCase(fetchEvent.pending,(state)=>{
-            state.laoding = true;
+            state.loading = true;
 
         })
         .addCase(fetchEvent.fulfilled,(state,action)=>{
-            state.laoding = false;
+            state.loading = false;
             state.events = action.payload;
         })
         .addCase(fetchEvent.rejected,(state,action)=>{
-            state.laoding = false;
+            state.loading = false;
             state.error = action.error.message;
         })
     }
