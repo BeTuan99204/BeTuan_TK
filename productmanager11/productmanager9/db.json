@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "bánh xèo",
+      "price": "23456",
+      "description": "ngon va giòn",
+      "image": "./image1.png"
+    },
+    {
+      "id": "2",
+      "name": "nem nướng",
+      "price": "56000",
+      "description": "ngon va giòn",
+      "image": "./image2.png"
+    },
+    {
+      "id": "3",
+      "name": "bánh bèo",
+      "price": "25000",
+      "description": "ngon va giòn",
+      "image": "./image3.png"
+    },
+    {
+      "id": "4",
+      "name": "Sường nướng",
+      "price": "140000",
+      "description": "ngon va giòn",
+      "image": "./image4.png"
+    },
+    {
+      "id": "5",
+      "name": "bánh mì thịt",
+      "price": "35000",
+      "description": "ngon va giòn",
+      "image": "./image5.png"
+    },
+    {
+      "id": "6",
+      "name": "Thịt gà",
+      "price": "200000",
+      "description": "ngon va giòn",
+      "image": "./image6.png"
+    },
+    {
+      "id": "1747970995979",
+      "name": "Bánh Xèo",
+      "price": "50000",
+      "description": "Thơm ngon phê như con tê tê",
+      "image": "image1.png"
+    }
+  ]
+}
